@@ -1,0 +1,59 @@
+
+<!--
+ManageRPProfileStatus.html
+
+This is the main page for ManageRecurringPaymentsProfileStatus sample. 
+This page displays a text box where the user enters a 
+Profile ID and Action a Submit button that calls 
+ManageRPProfileStatus.php.
+
+Called by RecurringPayments.php.
+
+Calls ManageRPProfileStatus.php.
+
+-->
+<html>
+<head>
+    <title>PayPal SDK - ManageRecurringPaymentsProfileStatus API</title>
+    <link href="../sdk.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <center>
+    <span id=apiheader>Manage Recurring Payments Profile Status</span>
+     <br><br>
+    <form action="ManageRPProfileStatus.php" method="post">
+        <table class="api">
+            <tr>
+                <td class="field">
+                    Profile ID:
+                </td>
+                <td>
+                    <input type="text" name="profileID" value="" /> 
+                    (Required)</td>
+            </tr>
+           	<tr>
+                <td class="field">
+                    Action:
+                </td>
+                <td>
+                    <select name="action">
+                    	<option value=Cancel>Cancel</option>
+                    	<option value=Suspend>Suspend</option>
+                    	<option value=Reactivate>Reactivate</option>
+                    </select>
+                     
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <center>
+                    <input type="Submit" value="Submit" /></center>
+                </td>
+            </tr>
+        </table>
+    </form>
+    </center>
+    <br />
+    <a id="CallsLink" href="RecurringPayments.php"  class="home" >Recurring Payments Home</a>
+</body>
+</html>

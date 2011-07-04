@@ -1,0 +1,139 @@
+
+<!--
+MassPay.html
+
+This is the main page for MassPay sample. 
+
+MassPay is usefull to capture multiple transactions 
+in a single shot, like batch settlement.
+
+This page allow the user to enter the required 
+parameters for MassPay API call and a Submit button 
+that calls MassPayReceipt.php.
+
+Called by index.html.
+
+Calls MassPayReceipt.php.
+
+-->
+<html>
+	<head>
+		<title>PayPal SDK - MassPay</title>
+		<link href="sdk.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<form method="POST" action="MassPayReceipt.php" ID="Form1">
+			<center>
+				<table class="api" ID="Table1">
+					<tr>
+						<td></td>
+						<td></td>
+						
+						<td colspan="6" align="center">
+							<font size="larger" color="black" face="Verdana"><b>MassPay </b></font>
+						</td>
+					</tr>
+					<TR>
+						<TD class="thinfield" width="52">EmailSubject</TD>
+						<TD><INPUT id="EmailSubject" type="text" value="You have money!" name="emailSubject" runat="server"></TD>
+						<TD class="field"></TD>
+						<TD class="field"></TD>
+						<TD class="field"></TD>
+					</TR>
+					<TR>
+						<TD class="thinfield" width="52">ReceiverType</TD>
+						<TD><INPUT id="ReceiverType" type="text" value="EmailAddress" name="receiverType" runat="server"></TD>
+						<TD class="field"></TD>
+						<TD class="field"></TD>
+						<TD class="field"></TD>
+					</TR>
+					<TR>
+						<TD class="thinfield" width="52">CurrencyCode</TD>
+						<TD>
+							<select name="currency" ID="Select1">
+								<option value="USD" selected>USD</option>
+								<option value="GBP">GBP</option>
+								<option value="EUR">EUR</option>
+								<option value="JPY">JPY</option>
+								<option value="CAD">CAD</option>
+								<option value="AUD">AUD</option>
+							</select>
+						</TD>
+					</TR>
+					<TR>
+						<TD class="thinfield" height="14" colSpan="5">
+							<P align="center">Mass Pay Item Details</P>
+						</TD>
+					</TR>
+					<tr>
+						<td class="thinfield" width="52">
+							Payee</td>
+						<td class="thinfield">
+							ReceiverEmail (Required):</td>
+						<td class="thinfield">
+							Amount(Required):</td>
+						<td class="thinfield">
+							UniqueID</td>
+						<td class="thinfield">
+							Note</td>
+					</tr>
+					<tr>
+						<td width="52">
+							<P align="right">1</P>
+						</td>
+						<td>
+							<input type="text" name="receiveremail[]" value="user@paypal.com" ID="Text1">
+						</td>
+						<td>
+							<input type="text" name="amount[]" size="5" maxlength="7" value="1.00" ID="Text2">
+						</td>
+						<td>
+							<input type="text" name="uniqueID[]" ID="Text3"></td>
+						<td>
+							<input type="text" name="note[]" ID="Text4">
+						</td>
+					</tr>
+					<tr>
+						<td width="52">
+							<P align="right">2</P>
+						</td>
+						<td>
+							<input type="text" name="receiveremail[]" value="user@paypal.com" ID="Text5">
+						</td>
+						<td>
+							<input type="text" name="amount[]" size="5" maxlength="7" value="1.00" ID="Text6">
+						</td>
+						<td>
+							<input type="text" name="uniqueID[]" ID="Text7"></td>
+						<td>
+							<input type="text" name="note[]" ID="Text8">
+						</td>
+					</tr>
+					<tr>
+						<td width="52">
+							<P align="right">3</P>
+						</td>
+						<td>
+							<input type="text" name="receiveremail[]" value="user@paypal.com" ID="Text9">
+						</td>
+						<td>
+							<input type="text" name="amount[]" size="5" maxlength="7" value="1.00" ID="Text10">
+						</td>
+						<td>
+							<input type="text" name="uniqueID[]" ID="Text11"></td>
+						<td>
+							<input type="text" name="note[]" ID="Text12">
+						</td>
+					</tr>
+					<tr>
+						<td class="thinfield" width="52">
+						</td>
+						<td colspan="5">
+							<input type="submit" value="Submit" ID="Submit1" NAME="Submit1"></td>
+					</tr>
+				</table>
+			</center>
+			<a class="home" id="CallsLink" href="index.html">Home</a>
+		</form>
+	</body>
+</html>

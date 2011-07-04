@@ -1,0 +1,70 @@
+
+<!--
+GetRPProfileDetails.html
+
+This is the main page for GetRecurringPaymentsProfileDetails sample. 
+This page displays a text box where the user enters a 
+Profile ID and a Submit button that calls 
+GetRPProfileDetails.php.
+
+Called by RecurringPayments.php.
+
+Calls GetRPProfileDetails.php.
+
+-->
+<html>
+<head>
+    <title>PayPal SDK - GetRecurringPaymentsProfileDetails API</title>
+    <link href="../sdk.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+
+		function setProfileID()
+		{
+			var qs = getArgs();
+	
+			if(qs.profileID != null)
+				document.GetRPProfileDetailsForm.profileID.value = qs.profileID;
+		}		
+	
+    	function getArgs() {
+	    	var args = new Object();
+	    	var query = location.search.substring(1);
+	    	var pairs = query.split("&");
+	    	for(var i = 0; i < pairs.length; i++) {
+	    	var pos = pairs[i].indexOf('=');
+	    	if (pos == -1) continue;
+	    	var argname = pairs[i].substring(0,pos);
+	    	var value = pairs[i].substring(pos+1);
+	    	args[argname] = unescape(value);
+	    	}
+	    	return args;
+    	}
+    </script>
+</head>
+<body onload="setProfileID();">
+    <center>
+    <span id=apiheader>Recurring Payments Profile Details</span>
+     <br><br>
+    <form action="GetRPProfileDetails.php" method="post" name="GetRPProfileDetailsForm">
+        <table class="api">
+            <tr>
+                <td class="field">
+                    Profile ID:
+                </td>
+                <td>
+                    <input type="text" name="profileID" value="" /> 
+                    (Required)</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <center>
+                    <input type="Submit" value="Submit" /></center>
+                </td>
+            </tr>
+        </table>
+    </form>
+    </center>
+    <br />
+    <a id="CallsLink" href="RecurringPayments.php"  class="home">Recurring Payments Home</a>
+</body>
+</html>

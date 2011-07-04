@@ -1,0 +1,114 @@
+﻿a
+{
+    color:Blue;
+}
+
+td
+{
+	text-align:left;
+}
+
+
+td.field
+{
+	text-align:right;
+	font-size:x-small;
+	font-family:Verdana;
+	font-weight:bold;
+}
+
+td.thinfield
+{
+	text-align:right;
+	font-size:x-small;
+	font-family:Verdana;
+	
+}
+
+
+a.home
+{
+	font-weight:bold;
+	margin:2em 2em 2em 2em
+}
+body
+{
+   font-size:small;   
+   font-family:Verdana;
+   color:Black;
+}
+
+a
+{
+    color:Blue;
+}
+
+#calls
+{
+    font-family:Verdana;
+    width:500px;
+}
+
+#calls th
+{
+    padding:10px;
+}
+
+table
+{
+   font-size:x-small; 
+}
+
+td.header
+{
+	text-align:right;
+	font-size:x-small;
+	color:Black;
+	font-family:Verdana;
+	font-weight:bold;
+}
+
+#normalBold
+{
+   color:Black;
+   font-family:Verdana;
+	font-weight:bold;
+}
+
+.smaller
+{
+   font-size:smaller;
+}
+
+#normal
+{
+   color:Black;
+   font-size:small;   
+   font-family:Verdana;
+}
+
+#redBold
+{
+   color:Red;
+   font-size:small;   
+   font-family:Verdana;
+	font-weight:bold;
+}
+
+#apiheader
+{
+	text-align:center;
+	font-weight:bold;
+	font-size:larger;
+	font-family:Verdana;
+}
+
+table.api
+{
+	width:600;
+}
+
+a.home
+{
+	font-weight:bold;
+}

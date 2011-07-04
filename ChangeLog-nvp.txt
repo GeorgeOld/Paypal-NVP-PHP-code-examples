@@ -1,0 +1,62 @@
+PayPal NVP Web Samples Using PHP
+Change Log 
+============================================================================
+Version 5.3.65: 10-14-2010
+API version change to 65.1
+Upgraded to PHP 5.3, it's now compatible with PHP 5.1.2 and higher
+============================================================================
+Version 5.3.64: 09-21-2010
+Permissioning support is added to authentication mechanism
+============================================================================
+Version 5.2.64: 07-12-2010
+API version change to 64.0
+============================================================================
+Version 5.2.63: 05-03-2010
+API version change to 63.0
+============================================================================
+Version 5.2.62: 03-02-2010
+API version change to 62.0
+============================================================================
+Version 5.2.61: 01-12-2010
+API version change to 61.0
+JPY currency issue fixed in EC
+============================================================================
+Version 5.2.60: 12-29-2009
+Reference Implementation Includes Recurring Payments, version overrride, Third Party calls and 3D Secure(for UK merchants only) API features.
+API version change to 60.0
+ - line item deatils in the shopping cart page for EC samples
+ - UniPay support
+============================================================================
+Version 5.2.59: 7-25-2009
+API version change to 59.0
+=====================================================================================
+Version 5.2.58: 6-25-2009
+* version update to 58.0
+* Reference Implementation Includes Instant Update API features
+   - line item deatils in the shopping cart page for EC samples
+   - SetEC and GetExpressChecoutDetails API calls use Instant Update API for shipping
+   
+API Parameter Typo Bug: Typo in the Shipping Option Label parameter in SetEC
+(for flat rate shipping parameters):Typo: shipingpoptionlabel
+(Target fix timeline: 59.0, around Aug 18, 09.  Afterwards, we will support both the 
+typo version and the correct spelling version for backward compatibility.)     
+   
+======================================================================================
+Version 5.1.57: 03-25-2009
+version updated to 57.0
+===========================================================================
+Version 5.1.56: 01-28-2009
+version updated to 56.0
+===========================================================================
+Version 5.1.2: 03-28-2008
+GetBalance API added.
+version updated to 51.0
+===========================================================================
+Version 5.1.1: 04-14-2007
+Minor look'n'feel changes
+===========================================================================
+Version 5.1: 01-14-2007
+Added samples for DoCapture, DoVoid, TransactionSearch, Refund, MassPay and ReAuth
+Proxy support provided
+===========================================================================
+Version 5.0: 10-23-2006
