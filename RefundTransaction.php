@@ -64,9 +64,9 @@ Calls RefundReceipt.php.
  <?php
    $cur_list = array('USD', 'GBP', 'EUR', 'JPY', 'CAD', 'AUD');
    for($s=0; $s < sizeof($cur_list); $s++) {
-      $selected = (!strcmp($currency, $cur_list[$s])) ? 'selected' : '';
+      $selected = (!strcmp($currency, $cur_list[$s])) ? 'selected="selected"' : '';
 ?>
-			<option ><?php echo $cur_list[$s];?></option>
+			<option <?php echo $selected; ?> ><?php echo $cur_list[$s];?></option>
 
 <?php } ?>
                     </select>
